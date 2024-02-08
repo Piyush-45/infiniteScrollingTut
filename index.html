@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Scrolling Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: purple;
+            text-decoration: underline;
+        }
+
+        #container {
+            max-height: 400px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .item {
+            background-color: #f0f0f0;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 10px;
+            font-style: italic;
+        }
+
+        .loading.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Infinite Scrolling</h1>
+    <div id="container">
+
+        <div id="content">
+            <!-- dynamic data lives here -->
+        </div>
+
+        <div id="loading" class="loading">Loading...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
